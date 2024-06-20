@@ -323,19 +323,54 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 ⚙️ <b>Size: </b> <code>{file_size}</code>"""
 
     IMDB_TEMPLATE_TXT = """
-<b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.
-
-🏷 Title: {title}</b>
-
-<b>⭐Rating: {rating}
+<b>🏷Title: <a href={url}>{title}</a>
+⭐Rating: <a href={url}/ratings>{rating}</a> / 10
 ⏰Run Time: {runtime} Minutes
 📆Release Date: {release_date}
 🕵️Director: {director}
 🔊AUDIO: {languages}
 🎭Genres: {genres}
 📖Plot: {plot}
-💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ♻️@MrAK_LinkZz</b>
-"""
+💗𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘: ♻️@MrAK_LinkZz</b>
+
+🔥𝐓𝚎𝚕𝚎𝚐𝚛𝚊𝚖 𝐅𝚒𝚕𝚎 𝐓𝚢𝚙𝚎 𝐋𝚒𝚗𝚔 📁
+
+➠250MB: 
+
+➠400MB: 
+
+➠700MB: 
+
+➠1GB (720p): 
+
+➠1.7GB (720p): 
+
+➠2.6GB (1080p): 
+
+💻 𝐖ᴀᴛᴄʜ & 𝐃𝚒𝚛𝚎𝚌𝚝 𝐅ᴀꜱᴛ 𝐃𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝐋𝚒𝚗𝚔
+
+➠250MB: 
+
+➠400MB: 
+
+➠700MB: 
+
+➠1GB (720p): 
+
+➠1.7GB (720p): 
+
+➠2.6GB (1080p): 
+
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+<a href='https://telegram.me/MrAK_LinkZz/5'>💁 𝗛𝗼𝘄 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱</a>
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+<a href='https://telegram.me/+9DBeA0skBoFlOGM1'>🔆 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐆𝐫𝐨𝐮𝐩</a>
+
+<a href='https://whatsapp.com/channel/0029VaZbVwQGU3BJt3IfFr2Q'>❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥</a>
+
+<a href='https://telegram.me/MrAK_Weekly_Release'>𝐖𝐞𝐞𝐤𝐥𝐲 𝐑𝐞𝐥𝐞𝐚𝐬𝐞𝐝 𝐌𝐨𝐯𝐢𝐞𝐬</a>
+
+<a href='https://telegram.me/MrAK_LinkZz'>❤️𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥</a></b>"""
     
 
     RESTART_TXT = """
