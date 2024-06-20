@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '22225617'))
-API_HASH = environ.get('API_HASH', 'ef16f7597376f1689663304c954e4493')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7039192360:AAHBT7iyF3qkJFLB46pZWzUpo7AE7ZUGkGY")
+API_ID = int(environ.get('API_ID', '26180065'))
+API_HASH = environ.get('API_HASH', '0a6358307acf8d0d2bf98b6827e0f5c7')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7038953855:AAFatp2FgR2d1ls8T6A_p9vEcJmtIa6FVTU")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -41,7 +41,7 @@ PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002122060084'))
 
 # Admins, Channels & Users
 USERNAME = environ.get("USERNAME", "https://t.me/I_Am_MrAK")
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6072149828').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6072149828 5773687944').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002145921498').split()] #Channel id for auto indexing ( make sure bot is admin )
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -57,7 +57,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True)) # True if you want no results messages in Log Channel
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://errorsmonster:S.Aruna1155182089@mrak.rrncwi8.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://errorsmonster:S.Aruna1155182089@mrak.fzbkr6k.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "mrak")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -110,7 +110,7 @@ NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = environ.get('APP_NAME', 'mraklinkzz-4a13061a9826')
+    APP_NAME = environ.get('APP_NAME', 'mrakfamily-00998865deec')
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
@@ -125,7 +125,7 @@ name = str(environ.get('name', 'LazyPrincess'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = str(getenv('APP_NAME', 'mraklinkzz-4a13061a9826'))
+    APP_NAME = str(getenv('APP_NAME', 'mrakfamily-00998865deec'))
 
 else:
     ON_HEROKU = False
