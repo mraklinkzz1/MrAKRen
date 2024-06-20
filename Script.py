@@ -27,7 +27,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.
  ‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.7.2 [sᴛᴀʙʟᴇ]></b>"""
 
     SOURCE_TXT = """
-<b>Tʜɪꜱ Bᴏᴛ Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ᴘᴀɪᴅ .
+<b>Tʜɪꜱ Bᴏᴛ Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs FREE .
 GitHub Repo : <a href='https://github.com/MrAKTech/MrAK-AutoFilter-Bot'>𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘</a>
 Cᴏɴᴛᴀᴄᴛ : <a href='https://t.me/I_Am_MrAK'>𝐈 𝐀𝐦 𝙼𝚁𝗔𝗞</a> 🙃</b>"""
 
