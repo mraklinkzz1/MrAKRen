@@ -2353,7 +2353,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton ('• ᴄʀᴇᴅɪᴛꜱ ᴛᴏ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ •', callback_data='credits'),
         ],[
             InlineKeyboardButton('🛰️ ʀᴇɴᴅᴇʀɪɴɢ ꜱᴛᴀᴛᴜꜱ ☁️',callback_data='rendr'),
-            InlineKeyboardButton('• ꜱᴛᴀᴛꜱ •', callback_data='stats')
+            InlineKeyboardButton('👨‍💻GitHub Repo👨‍💻', url='https://github.com/MrAKTech/MrAK-AutoFilter-Bot')
         ],[
             InlineKeyboardButton('🚫 Cʟᴏꜱᴇ', callback_data='close'),
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start')
