@@ -47,7 +47,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1002145921498') #Channel / Group Id for force sub ( make sure bot is admin )
+auth_channel = environ.get('AUTH_CHANNEL', '-1002107568197') #Channel / Group Id for force sub ( make sure bot is admin )
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -70,6 +70,11 @@ SHORTLINK_API = environ.get('SHORTLINK_API', '5f14184b5d330486d0ebcb32127fdca5b0
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 
 # Others
+MC = environ.get('MC', 'https://t.me/MrAK_LinkZz')
+MU = environ.get('MU', 'https://t.me/MrAK_Weekly_Release')
+AU = environ.get('AU', 'https://t.me/MrAK_AnimeZz')
+MRG = environ.get('MRG', 'https://t.me/+SKa11HVL-jU1MTNl')
+ARG = environ.get('ARG', 'https://t.me/+LL6rncUCRZ00ODc1')
 WCHNL = environ.get('WCHNL', 'https://whatsapp.com/channel/0029VaZbVwQGU3BJt3IfFr2Q')
 WRM = environ.get('WRM', 'https://t.me/MrAK_Weekly_Release')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
