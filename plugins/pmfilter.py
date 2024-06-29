@@ -100,7 +100,7 @@ if PM_SEARCH == True:
                 return
             else:
                 return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ ✅\n\n📂 ꜰɪʟᴇꜱ ꜰᴏᴜɴᴅ : {str(total_results)}\n🔍 ꜱᴇᴀʀᴄʜ :</b> <code>{search}</code>\n\n<b>‼️ ᴛʜɪs ɪs ᴀ <u>sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ</u> sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\n📝 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ : 👇</b>",   
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 ᴊᴏɪɴ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=f"https://telegram.me/+LL6rncUCRZ00ODc1")]]))
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 ᴊᴏɪɴ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=f"https://telegram.me/+9DBeA0skBoFlOGM1")]]))
 else:   
     @Client.on_message(filters.group & filters.text & filters.incoming)
     async def give_filter(client, message):
@@ -126,7 +126,7 @@ else:
                 return
             else:
                 return await message.reply_text(
-                    text=f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nFᴏʀ Mᴏᴠɪᴇs, Jᴏɪɴ https://telegram.me/+LL6rncUCRZ00ODc1</b>",
+                    text=f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nFᴏʀ Mᴏᴠɪᴇs, Jᴏɪɴ https://telegram.me/+SKa11HVL-jU1MTNl</b>",
                     parse_mode=enums.ParseMode.HTML
                 )
                 
@@ -140,7 +140,7 @@ if PM_SEARCH == True:
         if user_id in ADMINS: return # ignore admins
         await message.reply_text(
              text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇</b>",   
-             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://telegram.me/+LL6rncUCRZ00ODc1")]])
+             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://telegram.me/+9DBeA0skBoFlOGM1")]])
         )
         await bot.send_message(
             chat_id=LOG_CHANNEL,
@@ -156,7 +156,7 @@ else:
         if user_id in ADMINS: return # ignore admins
         await message.reply_text(
              text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇</b>",   
-             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://telegram.me/+LL6rncUCRZ00ODc1")]])
+             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://telegram.me/+SKa11HVL-jU1MTNl")]])
         )
         await bot.send_message(
             chat_id=LOG_CHANNEL,
@@ -1936,9 +1936,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton('💰 ɢᴇᴛ ғʀᴇᴇ/ᴘᴀɪᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💰', callback_data='subscription')
                 ],[
-                    InlineKeyboardButton('ᴡᴇᴇᴋʟʏ ʀᴇʟᴇᴀsᴇᴅ',url=WRM),
-                    InlineKeyboardButton('❤️ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ', url=WCHNL)
-                    ]]
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -2249,14 +2249,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     elif query.data == "channels":
         buttons = [[
-            InlineKeyboardButton('❤️𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://telegram.me/MrAK_LinkZz')
-        ],[
-            InlineKeyboardButton('🔍 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐆𝐫𝐨𝐮𝐩', url='https://telegram.me/+SKa11HVL-jU1MTNl'),
-            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://telegram.me/MrAK_Weekly_Release')
-            
-        ],[
-            InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://whatsapp.com/channel/0029VaZbVwQGU3BJt3IfFr2Q')
-        ],[
+                    InlineKeyboardButton('🍂 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍂', url=MC)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 😍', url=ARG)
+                ],[
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎥', url=MRG)
+                ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://telegram.me/MrAK_LinkZz')
         ]]
