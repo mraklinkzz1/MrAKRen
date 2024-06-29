@@ -257,7 +257,7 @@ async def start(client, message):
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
                                 InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
                             ],[
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
+                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️1', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
                             ]
                         ]
                     )
@@ -279,7 +279,7 @@ async def start(client, message):
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
                                 InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
                             ],[
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
+                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️2', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
                             ]
                         ]
                     )
@@ -479,7 +479,7 @@ async def start(client, message):
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
                                 InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
                             ],[
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
+                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️3', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
                             ]
                         ]
         )
@@ -561,7 +561,7 @@ async def start(client, message):
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
                                 InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
                             ],[
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
+                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️4', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
                             ]
                         ]
         )
@@ -627,7 +627,7 @@ async def start(client, message):
                                 InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
                                 InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
                             ],[
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
+                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️5', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
                             ]
                         ]
         )
