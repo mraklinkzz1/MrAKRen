@@ -64,7 +64,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Verify
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
 HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/MrAK_LinkZz/5') # How to open tutorial link for verification
-
+PM_SEARCH = bool(environ.get('PM_SEARCH', True))
 # Others
 WCHNL = environ.get('WCHNL', 'https://whatsapp.com/channel/0029VaZbVwQGU3BJt3IfFr2Q')
 WRM = environ.get('WRM', 'https://t.me/MrAK_Weekly_Release')
