@@ -102,9 +102,10 @@ async def start(client, message):
             )
             return
         
-    if AUTH_CHANNEL and not await is_req_subscribed(client, message):
+    if (AUTH_CHANNEL and not await is_req_subscribed(client, message)) and (AUTH_CHANNEL_2 and not await is_req_subscribed(client, message)):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL), creates_join_request=True)
+            invite_link_2 = await client.create_chat_invite_link(int(AUTH_CHANNEL_2), creates_join_request=True)
         except ChatAdminRequired:
             logger.error("Make sure Bot is admin in Forcesub channel")
             return
@@ -113,6 +114,8 @@ async def start(client, message):
                 InlineKeyboardButton(
                     "📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌", url=invite_link.invite_link
                 )
+            ],[
+                InlineKeyboardButton("Backup Channel 2", url=invite_link_2.invite_link)
             ]
         ]
 
