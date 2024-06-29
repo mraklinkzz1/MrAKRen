@@ -76,29 +76,33 @@ async def get_shortlink(url):
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, get_shortlink_sync, url)
 
-@Client.on_message(filters.group | filters.private & filters.text & filters.incoming)
+@Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     if message.chat.id != SUPPORT_CHAT_ID:
-        manual = await manual_filters(client, message)
-        if manual == False:
-            settings = await get_settings(message.chat.id)
-            try:
-                if settings['auto_ffilter']:
-                    await auto_filter(client, message)
-            except KeyError:
-                grpid = await active_connection(str(message.from_user.id))
-                await save_group_settings(grpid, 'auto_ffilter', True)
+        glob = await global_filters(client, message)
+        if glob == False:
+            manual = await manual_filters(client, message)
+            if manual == False:
                 settings = await get_settings(message.chat.id)
-                if settings['auto_ffilter']:
-                    await auto_filter(client, message) 
+                try:
+                    if settings['auto_ffilter']:
+                        await auto_filter(client, message)
+                except KeyError:
+                    grpid = await active_connection(str(message.from_user.id))
+                    await save_group_settings(grpid, 'auto_ffilter', True)
+                    settings = await get_settings(message.chat.id)
+                    if settings['auto_ffilter']:
+                        await auto_filter(client, message)
     else: #a better logic to avoid repeated lines of code in auto_filter function
         search = message.text
         temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
         if total_results == 0:
             return
         else:
-            return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ ✅\n\n📂 ꜰɪʟᴇꜱ ꜰᴏᴜɴᴅ : {str(total_results)}\n🔍 ꜱᴇᴀʀᴄʜ :</b> <code>{search}</code>\n\n<b>‼️ ᴛʜɪs ɪs ᴀ <u>sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ</u> sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\n📝 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ : 👇</b>",   
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 ᴊᴏɪɴ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=f"https://telegram.me/+SKa11HVL-jU1MTNl")]]))
+            return await message.reply_text(
+                text=f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nFᴏʀ Mᴏᴠɪᴇs, Jᴏɪɴ https://telegram.me/+SKa11HVL-jU1MTNl</b>",
+                parse_mode=enums.ParseMode.HTML
+            )
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
@@ -115,6 +119,7 @@ async def pm_text(bot, message):
         chat_id=LOG_CHANNEL,
         text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
     )
+
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
