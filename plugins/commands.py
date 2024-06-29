@@ -224,52 +224,44 @@ async def start(client, message):
             file = await client.download_media(file_id)
             try: 
                 with open(file) as file_data:
-                    msgs = json.loads(file_data.read())
+                    msgs=json.loads(file_data.read())
             except:
                 await sts.edit("FAILED")
                 return await client.send_message(LOG_CHANNEL, "UNABLE TO OPEN FILE.")
             os.remove(file)
             BATCH_FILES[file_id] = msgs
-        
         for msg in msgs:
             title = msg.get("title")
-            size = get_size(int(msg.get("size", 0)))
-            f_caption = msg.get("caption", "")
+            size=get_size(int(msg.get("size", 0)))
+            f_caption=msg.get("caption", "")
             if BATCH_FILE_CAPTION:
                 try:
-                    f_caption = BATCH_FILE_CAPTION.format(
-                        file_name='' if title is None else title, 
-                        file_size='' if size is None else size, 
-                        file_caption='' if f_caption is None else f_caption
-                    )
+                    f_caption=BATCH_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
                 except Exception as e:
                     logger.exception(e)
-                    f_caption = f_caption
+                    f_caption=f_caption
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                msg_obj = await client.send_cached_media(
+                await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    protect_content=msg.get('protect', False)
-                )
-                
-                k = await msg_obj.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>20 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True,
+                    protect_content=msg.get('protect', False))
+                k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>20 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
                                 InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕ʏ 𝚁𝚎𝚕𝚎ᴀ𝚜𝚎ᴅ',url=WRM),
+                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
                                 InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
                             ]
                         ]
-                    )
-                )
+                    ))
                 await asyncio.sleep(1200)
-                await msg_obj.delete()
+                await msg.delete()
                 await k.edit_text("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴀɢᴀɪɴ.</b>",
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -277,12 +269,11 @@ async def start(client, message):
                                 InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕ʏ 𝚁𝚎ʟᴇᴀ𝚜ᴇᴅ',url=WRM),
+                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
                                 InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
                             ]
                         ]
-                    )
-                )
+                    ))
                 return
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -298,8 +289,10 @@ async def start(client, message):
                                 InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton('𝚆𝚎𝚎ᴋʟʏ 𝚁𝚎ʟᴇᴀsᴇᴅ',url=WRM),
+                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
                                 InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
+                            ],[
+                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
                             ]
                         ]
                     )
