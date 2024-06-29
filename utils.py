@@ -781,16 +781,4 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
         cap  += f"<b>\n⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛꜱ 🗑️\n</b>"
     return cap
 
-async def pub_is_subscribed(bot, query, channel):
-    btn = []
-    for id in channel:
-        chat = await bot.get_chat(int(id))
-        try:
-            await bot.get_chat_member(id, query.from_user.id)
-        except UserNotParticipant:
-            btn.append(
-                [InlineKeyboardButton(f'Join {chat.title}', url=chat.invite_link)]
-            )
-        except Exception as e:
-            pass
-    return btn
+
