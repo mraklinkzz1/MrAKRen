@@ -56,9 +56,9 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton('💰 ɢᴇᴛ ғʀᴇᴇ/ᴘᴀɪᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💰', callback_data='subscription')
                 ],[
-                    InlineKeyboardButton('ᴡᴇᴇᴋʟʏ ʀᴇʟᴇᴀsᴇᴅ',url=WRM),
-                    InlineKeyboardButton('❤️ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ', url=WCHNL)
-                    ]]
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
@@ -143,9 +143,9 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton('💰 ɢᴇᴛ ғʀᴇᴇ/ᴘᴀɪᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💰', callback_data='subscription')
                 ],[
-                    InlineKeyboardButton('ᴡᴇᴇᴋʟʏ ʀᴇʟᴇᴀsᴇᴅ',url=WRM),
-                    InlineKeyboardButton('❤️ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ', url=WCHNL)
-                    ]]
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
@@ -247,34 +247,23 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    protect_content=msg.get('protect', False))
-                k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>20 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",
+                    protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
                         [
-                            [
-                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
-                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                            ],[
-                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
-                                InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
-                            ]
-                        ]
-                    ))
-                await asyncio.sleep(1200)
-                await msg.delete()
-                await k.edit_text("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴀɢᴀɪɴ.</b>",
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
-                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                            ],[
-                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
-                                InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
-                            ]
-                        ]
-                    ))
-                return
+                [
+                    InlineKeyboardButton('🍂 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍂', url=MC)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 😍', url=ARG)
+                ],[
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎥', url=MRG)
+                ]
+
+            ]
+                    )
+                )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
@@ -285,16 +274,18 @@ async def start(client, message):
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
                         [
-                            [
-                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
-                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                            ],[
-                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
-                                InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
-                            ],[
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
-                            ]
-                        ]
+                [
+                    InlineKeyboardButton('🍂 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍂', url=MC)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 😍', url=ARG)
+                ],[
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎥', url=MRG)
+                ]
+
+            ]
                     )
                 )
             except Exception as e:
@@ -391,9 +382,15 @@ async def start(client, message):
                     ], [
                         InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=await get_tutorial(chat_id))
                     ],[
-                        InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
-                        InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
-                    ],[
+                    InlineKeyboardButton('🍂 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍂', url=MC)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 😍', url=ARG)
+                ],[
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎥', url=MRG)
+                ],[
                         InlineKeyboardButton('💰 ɢᴇᴛ ғʀᴇᴇ/ᴘᴀɪᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💰', callback_data="buy_premium")                            
                     ]
                 ]
@@ -431,9 +428,15 @@ async def start(client, message):
                     ], [
                         InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=await get_tutorial(chat_id))
                     ],[
-                        InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
-                        InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
-                    ],[
+                    InlineKeyboardButton('🍂 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍂', url=MC)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 😍', url=ARG)
+                ],[
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎥', url=MRG)
+                ],[
                         InlineKeyboardButton('💰 ɢᴇᴛ ғʀᴇᴇ/ᴘᴀɪᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💰', callback_data="buy_premium")                            
                     ]
                 ]
@@ -486,12 +489,15 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
             [
                             [
-                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
-                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                            ],[
-                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
-                                InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
-                            ],[
+                    InlineKeyboardButton('🍂 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍂', url=MC)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 😍', url=ARG)
+                ],[
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎥', url=MRG)
+                ],[
                                 InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
                             ]
                         ]
@@ -533,9 +539,15 @@ async def start(client, message):
                     ], [
                         InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=await get_tutorial(chat_id))
                     ],[
-                        InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
-                        InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
-                    ],[
+                    InlineKeyboardButton('🍂 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍂', url=MC)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 😍', url=ARG)
+                ],[
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎥', url=MRG)
+                ],[
                         InlineKeyboardButton('💰 ɢᴇᴛ ғʀᴇᴇ/ᴘᴀɪᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💰', callback_data="buy_premium")                            
                     ]
                     ]
@@ -568,12 +580,15 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
             [
                             [
-                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
-                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                            ],[
-                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
-                                InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
-                            ],[
+                    InlineKeyboardButton('🍂 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍂', url=MC)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 😍', url=ARG)
+                ],[
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎥', url=MRG)
+                ],[
                                 InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
                             ]
                         ]
@@ -634,12 +649,15 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                             [
-                                InlineKeyboardButton('Mᴏᴠɪᴇ🔎Gʀᴏᴜᴘ', url=GRP_LNK),
-                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                            ],[
-                                InlineKeyboardButton('𝚆𝚎𝚎𝚔𝚕𝚢 𝚁𝚎𝚕𝚎𝚊𝚜𝚎𝚍',url=WRM),
-                                InlineKeyboardButton('❤️𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url=WCHNL)
-                            ],[
+                    InlineKeyboardButton('🍂 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🍂', url=MC)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😍', url=AU),
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🎥', url=MU)
+                ],[
+                    InlineKeyboardButton('😍 𝐀𝐍𝐈𝐌𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 😍', url=ARG)
+                ],[
+                    InlineKeyboardButton('🎥 𝐌𝐎𝐕𝐈𝐄𝐒 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎥', url=MRG)
+                ],[
                                 InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @I_Am_MrAK
                             ]
                         ]
