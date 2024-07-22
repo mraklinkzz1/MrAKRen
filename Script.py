@@ -322,14 +322,12 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 ⚙️ <b>Size: </b> <code>{file_size}</code>"""
 
     IMDB_TEMPLATE_TXT = """
-<b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.
-
 🏷 Title: {title}</b>
-
 <b>⭐Rating: {rating}
 ⏰Run Time: {runtime} Minutes
 📆Release Date: {release_date}
 🕵️Director: {director}
+💿Quality : HD Print
 🔊AUDIO: {languages}
 🎭Genres: {genres}
 📖Plot: {plot}
