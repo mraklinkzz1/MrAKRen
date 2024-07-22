@@ -327,6 +327,7 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 ⏰Run Time: {runtime} Minutes
 📆Release Date: {release_date}
 🕵️Director: {director}
+💿Quality : HD Print
 🔊AUDIO: {languages}
 🎭Genres: {genres}
 📖Plot: {plot}
