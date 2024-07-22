@@ -322,19 +322,15 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 ⚙️ <b>Size: </b> <code>{file_size}</code>"""
 
     IMDB_TEMPLATE_TXT = """
-<b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.
-
-🏷 Title: {title}</b>
-
-<b>⭐Rating: {rating}
+<b>🏷Title: <a href={url}>{title}</a>
+⭐Rating: <a href={url}/ratings>{rating}</a> / 10
 ⏰Run Time: {runtime} Minutes
 📆Release Date: {release_date}
 🕵️Director: {director}
 🔊AUDIO: {languages}
 🎭Genres: {genres}
 📖Plot: {plot}
-💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ♻️@MrAK_LinkZz</b>
-"""
+💗𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘: ♻️@MrAK_LinkZz</b>"""
     
 
     RESTART_TXT = """
