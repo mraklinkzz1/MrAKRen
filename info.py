@@ -110,7 +110,7 @@ NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = environ.get('APP_NAME', 'mrakwork-a0ea9a3be23c')
+    APP_NAME = environ.get('APP_NAME')
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
@@ -125,7 +125,7 @@ name = str(environ.get('name', 'LazyPrincess'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = str(getenv('APP_NAME', 'mrakwork-a0ea9a3be23c'))
+    APP_NAME = str(getenv('APP_NAME'))
 
 else:
     ON_HEROKU = False
